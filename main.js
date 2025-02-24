@@ -1,12 +1,16 @@
 // Function to play the Iris voice lines
 function playIrisVoice(linenumber) {
+    var alarm = new Audio('background_intro_alarm.wav');
     if (linenumber == 1) {
+        alarm.play();
         var audio = new Audio('iris_line1.mp3');
         audio.play();
     } else if (linenumber == 2) {
+        alarm.play();
         var audio = new Audio('iris_line2.mp3');
         audio.play();
     } else if (linenumber == 3) {
+        alarm.play();
         var audio = new Audio('iris_line3.mp3');
         audio.play();
     }
