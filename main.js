@@ -2,12 +2,12 @@
 function playIrisVoice(linenumber) {
     // Play the alarm sound, but only once to avoid overlaps
     var alarm = new Audio('background_intro_alarm.wav');
-    alarm.play();
-    
+
     // Use a delay to allow the alarm sound to play before the Iris voice starts
     setTimeout(function() {
         if (linenumber == 1) {
             var audio = new Audio('iris_line1.mp3');
+            alarm.play();
             audio.play();
         } else if (linenumber == 2) {
             var audio = new Audio('iris_line2.mp3');
