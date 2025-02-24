@@ -12,7 +12,17 @@ function playIrisVoice(linenumber) {
     }
 }
 
-// Add event listener to the button
-document.getElementById("playButton").addEventListener("click", playIrisVoice(1));
-document.getElementById("taunt1").addEventListener("click", playIrisVoice(2));
-document.getElementById("taunt2").addEventListener("click", playIrisVoice(3));
+// Add event listener to the play button (clicking starts the voice line 1)
+document.getElementById("playButton").addEventListener("click", function() {
+    playIrisVoice(1);
+});
+
+// Add event listener to the taunt1 button (clicking starts the voice line 2)
+document.getElementById("taunt1").addEventListener("click", function() {
+    playIrisVoice(2);
+});
+
+// Add event listener to the taunt2 button (clicking starts the voice line 3)
+document.getElementById("taunt2").addEventListener("click", function() {
+    playIrisVoice(3);
+});
